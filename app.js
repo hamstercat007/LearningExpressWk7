@@ -6,10 +6,11 @@ const path = require("path");
 
 //path is a library to work with files in js
 
-app.use(express.json());
+app.use(express.json()); //makes things into a JSON object
 app.use(cors());
 app.use(express.static("public")); //I'm keeping my static folders called public
 
+//notes is my database
 let notes = [
   {
     title: "Groceries list",
